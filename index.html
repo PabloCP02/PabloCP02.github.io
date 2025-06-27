@@ -14,29 +14,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-.overlay-dark {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* oscurece suavemente */
-  z-index: 1;
-}
+    .overlay-dark {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); /* oscurece suavemente */
+      z-index: 1;
+    }
 
-.carousel-item img {
-  position: relative;
-  z-index: 0;
-}
-.message-overlay {
-  z-index: 2;
-  position: absolute;
-}
+    .carousel-item img {
+      position: relative;
+      z-index: 0;
+    }
 
-
+    .message-overlay {
+      z-index: 2;
+      position: absolute;
+    }
 
     body {
       font-family: 'Open Sans', sans-serif;
-      background: #fff0f5;
+      background: #FFFBE7;
       color: #333;
       scroll-behavior: smooth;
     }
@@ -90,13 +89,15 @@
     }
 
     .btn-asistencia {
+      font-family: cursive;
+      font-size: 15px;
       position: fixed;
       bottom: 20px;
       right: 20px;
       z-index: 999;
       border-radius: 50px;
-      background: #b03060;
-      color: white;
+      background: #FFD700;
+      color: black;
       padding: 0.8rem 1.2rem;
       font-weight: bold;
       text-decoration: none;
@@ -124,8 +125,8 @@
   </style>
 </head>
 <body>
-
-  <button id="playMusic" style="position: fixed; top: 20px; left: 20px; z-index: 9999; background: #b03060; color: white; border: none; padding: 10px 15px; border-radius: 10px; cursor: pointer;">
+  <!-- Música -->
+  <button id="playMusic" style="position: fixed; top: 20px; left: 20px; z-index: 9999; background: #FFD700; color: #FFFBE7; border: none; padding: 10px 15px; border-radius: 10px; cursor: pointer; font-size: 15px;">
     <i class="fa-solid fa-play"></i></i> <i class="fa-solid fa-music fa-beat-fade"></i>
   </button>
   <audio id="bgMusic" loop>
@@ -138,16 +139,58 @@
     <div id="carouselBoda" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3000">
-            <div class="overlay-dark"></div>
-          <img src="https://scontent.fmid7-1.fna.fbcdn.net/v/t39.30808-6/487819902_2088035628383697_3221196903477792878_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=BcsXJdCunggQ7kNvwFG8zu-&_nc_oc=Adn-f658yKCRKqE2tI_31bFmtxKO-sLy3VtJkuWbczOePX45c-P80-IrZR2_zNa7IRE&_nc_zt=23&_nc_ht=scontent.fmid7-1.fna&_nc_gid=rTeV0XVDU2pc6HUawEmcqA&oh=00_AfObsMaD1fMBOs5E6GHd4n6hf-B5GA9Kq6OZtlMWHEUJGQ&oe=686127AF" class="d-block w-100" alt="Foto 1">
+          <div class="overlay-dark"></div>
+          <img src="img/7.jpg" class="d-block w-100" alt="">
         </div>
+
         <div class="carousel-item" data-bs-interval="3000">
-            <div class="overlay-dark"></div>
-          <img src="https://scontent.fmid7-1.fna.fbcdn.net/v/t39.30808-6/484850678_2075698722950721_6101825673031265243_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PA9JjAO0TncQ7kNvwHAIu4r&_nc_oc=AdlDt70AX8w9nQcEFoNoi_HyQ71bJ7s_0iFScb0Xw-rcioY-RCsNc8ybtLtdwSPdeeA&_nc_zt=23&_nc_ht=scontent.fmid7-1.fna&_nc_gid=stuJN44mOpcItlSxUQs9CQ&oh=00_AfOX-YbtCEEIiLxF8j9IQE7qmsYvslGkF9y1mUtuBAZ9YQ&oe=68612F23" class="d-block w-100" alt="Foto 2">
+          <div class="overlay-dark"></div>
+          <img src="img/2.jpg" class="d-block w-100" alt="">
         </div>
+
         <div class="carousel-item" data-bs-interval="3000">
-            <div class="overlay-dark"></div>
-          <img src="https://scontent.fmid7-1.fna.fbcdn.net/v/t39.30808-6/312945996_1497575944096338_4722039140245212717_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=yxZHlXuMCuwQ7kNvwGazTT8&_nc_oc=Adkb5mDgTF92OMVoPWp45EQslHbmMzpHVu1ZSMEKTyZGFJwgk7_WWxNY-Xwtj1uw_u4&_nc_zt=23&_nc_ht=scontent.fmid7-1.fna&_nc_gid=YtIs8ZUtBW0NCg6anKQlQA&oh=00_AfMbfwTO0ryNZLDbF9-O7BIkd-ka3mnd_Kra3mETyhtCbA&oe=68613814" class="d-block w-100" alt="Foto 3">
+          <div class="overlay-dark"></div>
+          <img src="img/3.jpg" class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="overlay-dark"></div>
+          <img src="img/4.jpg" class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="overlay-dark"></div>
+          <img src="img/1.jpg" class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="overlay-dark"></div>
+          <img src="img/9.jpg" class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="overlay-dark"></div>
+          <img src="img/10.jpg" class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="overlay-dark"></div>
+          <img src="img/11.jpg" class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="overlay-dark"></div>
+          <img src="img/5.jpg" class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="overlay-dark"></div>
+          <img src="img/6.jpg" class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <div class="overlay-dark"></div>
+          <img src="img/8.jpg" class="d-block w-100" alt="F">
         </div>
       </div>
     </div>
@@ -160,7 +203,7 @@
   <!-- Sección ceremonia -->
   <section id="ceremonia">
     <h2><i class="fa-solid fa-church fa-beat-fade"></i> Ceremonia Religiosa</h2>
-    <p>La ceremonia tendrá lugar en la Iglesia Sagrado Corazón de Jesús el <strong>30 de agosto de 2025 a las 12:00 PM</strong>.</p>
+    <p>La ceremonia tendrá lugar en la Iglesia Sagrado Corazón de Jesús el <strong>30 de agosto de 2025 a las 1:00 PM</strong>.</p>
     <p>Emiliano Zapata, 77620 Cozumel, Q.R.</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3642.4219284759074!2d-86.92824677203815!3d20.50042544606035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5825f65bcef7%3A0xe5c67e029203a3cf!2sIglesia%20Sagrado%20Coraz%C3%B3n%20de%20Jes%C3%BAs!5e0!3m2!1ses!2smx!4v1750860195876!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
@@ -177,7 +220,7 @@
   <footer class="py-5">
     Con cariño, <strong>Karina & Jesús</strong> — ¡Te esperamos!
     <br>
-    No olvides traer regalo 😊
+    Nuestro mejor regalo, es que estés presente en este día tan especial, pero si estás pensando en darnos un obsequio es bienvenido 😊
     <br>
     &nbsp;
   </footer>
