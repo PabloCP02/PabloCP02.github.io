@@ -1,0 +1,227 @@
+/* .esposos{
+    height: 15rem;
+    width: 20rem;
+} */
+
+ .anillos{
+    height: 10rem;
+    width: 10rem;
+}
+/* ✨ Estilos para la sección de itinerario */
+#itinerario {
+  padding: 2rem 2rem;
+  background-color: #FFFBE7;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 4px;
+  height: 100%;
+  background: #800000;
+  z-index: 0;
+}
+
+.timeline-event {
+  position: relative;
+  margin-bottom: 4rem;
+  padding-left: 70px;
+  text-align: left;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background: #FFD59A;
+  border: 3px solid #800000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #800000;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border-left: 5px solid #800000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #800000;
+}
+
+.timeline-content p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Ajustes para iframes dentro del itinerario */
+.timeline-content iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  border: none;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-event {
+    padding-left: 60px;
+  }
+
+  .timeline-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .timeline-content iframe {
+    height: 200px;
+  }
+
+  .anillos{
+    height: 85px;
+  }
+}
+
+
+/* ___________________________________ */
+.overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* oscurece suavemente */
+    z-index: 1;
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0;
+}
+
+.message-overlay {
+    z-index: 2;
+    position: absolute;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #FFFBE7;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.message-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: #800000;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 1rem;
+}
+
+footer {
+    background: #FFD59A;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn-asistencia {
+    font-family: cursive;
+    font-size: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    border-radius: 50px;
+    background: gold;
+    color: black;
+    padding: 0.8rem 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.btn-asistencia:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .message-overlay {
+    font-size: 2rem;
+    padding: 1rem;
+    }
+
+    iframe {
+    height: 250px;
+    }
+
+    h2 {
+    font-size: 2.2rem;
+    }
+}
